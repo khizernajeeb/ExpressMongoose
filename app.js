@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
-// Initiale app object 2
+// Initiale app object 3
 var app = express();
 
 var mongoose = require('mongoose');
