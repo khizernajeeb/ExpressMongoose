@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var catalog = require('./routes/catalog');
 
 // Initiale app object 3
 var app = express();
@@ -14,7 +15,6 @@ var app = express();
 var mongoose = require('mongoose');
 
 var mongodb = 'mongodb://khizer:khizer@ds235827.mlab.com:35827/mytasklist';
-
 
 mongoose.Promise = global.Promise;
 
@@ -38,6 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+//app.use('/catalog', catalog);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

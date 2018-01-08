@@ -105,7 +105,6 @@ function bookInstanceCreate(book, imprint, due_back, status, cb) {
   }  );
 }
 
-
 function createGenreAuthors(cb) {
     async.parallel([
         function(callback) {
